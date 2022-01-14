@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day07-10_BootStrap_Test/JavaWeb_Day07-10_BootStrap_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_Day07-10_BootStrap_Test/JavaWeb_Day07-10_BootStrap_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day11_BootStrap_Test/JavaWeb_Day11_BootStrap_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_Day11_BootStrap_Test/JavaWeb_Day11_BootStrap_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day14_Servlet_Test/JavaWeb_Day14_Servlet_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_Day14_Servlet_Test/JavaWeb_Day14_Servlet_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day17_EL_JSTL_Test/JavaWeb_Day17_EL_JSTL_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_Day17_EL_JSTL_Test/JavaWeb_Day17_EL_JSTL_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day22_AJAX_JOSN_TEST/JavaWeb_Day22_AJAX_JOSN_TEST.iml" filepath="$PROJECT_DIR$/JavaWeb_Day22_AJAX_JOSN_TEST/JavaWeb_Day22_AJAX_JOSN_TEST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day25_MavenDemo_Test/JavaWeb_Day25_MavenDemo_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_Day25_MavenDemo_Test/JavaWeb_Day25_MavenDemo_Test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestDemo.iml" filepath="$PROJECT_DIR$/TestDemo.iml" />
+    </modules>
+  </component>
+</project>

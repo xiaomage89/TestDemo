@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="login">
+        <div class="lg_le">
+            <p>新用户注册</p>
+            <p>USER REGISTER</p>
+        </div>
+        <div class="lg_ce">
+            <div class="lg_form">
+                <form action="#" method="post" id="form">
+                    <table>
+                        <tr>
+                            <td class="fm_lf"><lable>用户名</lable></td>
+                            <td class="fm_rg">
+                                <input type="text" name="username" id="username" placeholder="请输入用户名">
+                                <span id="s_username" class="error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><lable>密码</lable></td>
+                            <td class="fm_rg">
+                                <input type="password" name="password" id="password" placeholder="请输入密码">
+                                <span id="s_password" class="error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><lable>邮箱</lable></td>
+                            <td class="fm_rg"><input type="email" name="email" id="email" placeholder="请输入邮箱"></td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><lable>姓名</lable></td>
+                            <td class="fm_rg"><input type="text" name="name" id="name" placeholder="请输入姓名"></td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><lable>手机号</lable></td>
+                            <td class="fm_rg"><input type="text" name="tel" id="tel" placeholder="请输入手机号"></td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><lable>性别</lable></td>
+                            <td class="fm_rg">
+                                <input type="radio" name="gender" value="male"> 男
+                                <input type="radio" name="gender" value="semale"> 女
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><label for="birthday">出生日期</label></td>
+                            <td class="fm_rg"><input type="date" name="birthday" id="birthday" placeholder="请输入出生日期"></td>
+                        </tr>
+                        <tr>
+                            <td class="fm_lf"><label for="checkcode" >验证码</label></td>
+                            <td class="fm_rg"><input type="text" name="checkcode" id="checkcode" placeholder="请输入验证码">
+                                <img id="img_check" src="../img/verify_code.jpg">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center"><input type="submit" id="btn_sub" value="注册"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="lg_rg">
+            <p>已有账号?<a href="#">立即登录</a></p>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../js/login.js"></script>
