@@ -1,0 +1,45 @@
+<!doctype html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <style>
+ #ul{
+ 　　list-style:none;
+　　 width:150px;
+　　 border:1px solid #000;
+ 　　display:none;
+ }
+ li a{
+ 　　text-decoration:none; 
+ 　　color:#000;
+ }
+ </style>
+ </head>
+ <body>
+ <input id="ipt" type="text" placeholder="点击测试"/>
+ <ul id="ul">
+ 　　<li><a href="javascript:;">测试1</a></li>
+ 　　<li><a href="javascript:;">测试2</a></li>
+ 　　<li><a href="javascript:;">测试3</a></li>
+ </ul>
+ <script>
+ var ipt=document.getElementById('ipt'); 
+ var ul=document.getElementById('ul'); 
+ var li=ul.children; 
+ ipt.onfocus=function(){
+ 　　ul.style.display='block';
+ };
+ ipt.onblur=function(){/*点击li(失去焦点)时触发*/
+ 　　setTimeout(function(){
+ 　　　　ul.style.display='none'; 
+ 　　},200);/*停留的时间如果过短，onclick事件无法执行，过长用户体验不好*/
+ }
+ //注册点击事件
+ for(var i=0;i<li.length;i++){
+ 　　li[i].onclick=function(){
+ 　　　　ipt.value=this.innerText; 
+ 　　};
+ }
+ </script>
+ </body>
+ </html>

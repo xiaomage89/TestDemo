@@ -1,0 +1,43 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	color: #424242;
+	font-style: normal;
+}
+
+.nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.nav:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.nav .list-item{
+	float: left;
+	margin: 10 10px;
+	height: 30px;
+	line-height: 30px;
+	
+}
+.nav .list-item a{
+	padding:0 5px;
+	color: #f40;
+	font-style: bold;
+	height: 30px;
+	display: inline-block;
+	/*border:1px solid red;*/
+}
+
+
+.nav .list-item a:hover{
+	background-color: #f40;
+	color: #fff;
+	border-radius: 15px;
+}

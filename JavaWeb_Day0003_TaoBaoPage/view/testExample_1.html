@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JAVA Web开发从入门到实践 书籍</title>
+		<style type="text/css">
+			#dir{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			h2{
+				margin-top: 30px;
+			}
+			label,textarea{
+				margin-top: 5px;
+			}
+/*  			input {
+					height: 18px;
+					line-height: 18px;
+				} */
+			.sex{
+				padding: 0px 15px;
+			}
+			.button{
+				padding: 0px 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="dir">
+			<h2>问卷调查</h2>
+			<form>
+				姓名：<input type="text" name="name" value = "" ><br>
+				性别：<input  type="radio" name="sex" value="male" checked><span class="sex"></span><input  type="radio" name="sex" value="female"><br>
+				所在地：<select name="arer" size="2" multiple>
+							<option value="上海1" >上海1</option>
+							<option value="上海2" >上海2</option>
+							<option value="上海3" selected="selected">上海3</option>
+							<option value="上海4">上海4</option>
+							<option value="上海5">上海5</option>
+
+				</select><br>
+				喜欢歌手：<input type="checkbox" name="look">马1
+							<input type="checkbox" name="look" checked>马2
+							<input type="checkbox" name="look">马3
+							<input type="checkbox" name="look">马4
+							<br>
+				你的靓照：<input type="file" name=""><br>
+				<div class="gerenms">
+					<label style="float: left; line-height: 148px;">个人描述：</label>
+					<textarea name="geren" id="" cols="30" rows="10"></textarea>
+				</div> <br>
+				<input type="submit" value="提交" name="submit"> 
+				<span class="button"></span>
+				<input type="reset" value="重置" name="reset">
+			</form>
+		</div>
+
+	</body>
+</html>

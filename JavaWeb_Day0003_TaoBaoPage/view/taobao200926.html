@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>淘宝网 -淘！我喜欢</title>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="icon" href="../favicon.ico"> 
+	<!-- <base href=""> 基础网址 -->
+    <base target="_banlk">
+    <script type="text/javascript">
+        function mouseoveMessage(){
+            var conv_Box=document.getElementById('conv_Box');
+            var box_Phone=document.getElementById('box_Phone');
+            var box_Travel=document.getElementById('box_Travel');
+
+            conv_Box.style.display='block'
+            box_Phone.style.display='block'
+        };
+        function mouseleaveMessage(){
+            var conv_Box=document.getElementById('conv_Box');
+            var box_Phone=document.getElementById('box_Phone');
+            var box_Travel=document.getElementById('box_Travel');
+
+            conv_Box.style.display='none'
+            box_Phone.style.display='none'
+        }
+/*        function mouseoverDispayBox(){
+            var boxcont1=document.getElementById('boxcont1');
+            boxcont1.style.display='none'
+        }
+        function mouseleaveDispayBox(){
+            
+        }*/
+    </script>
+</head>
+<body>
+    <div id="headmessages" class="layer clearfix">
+        <ui class="fl">
+            <li class="site-nav-menu">
+                <a href="" class="marr7">中国大陆</a>
+                <span class="iconfont">&#xe508;</span>
+            </li>
+            <li class="site-nav-menu">
+                <a href="" class="login marr7">亲！请登录</a>
+                <a href="" class="register marr7">免费注册</a>
+            </li>
+            <li class="site-nav-menu">
+                <a href="">手机逛淘宝</a>
+            </li>
+        </ui>
+        <ui class="fr">
+            <li class="site-nav-menu">
+                <a href="" class="marr7">我的淘宝</a>
+                <span class="iconfont">&#xe508;</span>
+            </li>
+            <li class="site-nav-menu">
+                <span class="iconfont color-FF4400 marr5">&#xe514;</span>
+                <a href="" >购物车</a>
+                <strong class="marr7">0</strong>
+                <span class="iconfont">&#xe508;</span>
+            </li>
+            <li class="site-nav-menu">
+                <span class="iconfont marr5">&#xe502;</span>
+                <a href="" class="marr7">收藏夹</a>
+                <span class="iconfont">&#xe508;</span>
+            </li>
+            <li class="site-nav-menu">
+                <a href="">商品分类</a>
+            </li>
+            <li class="site-nav-menu">
+                <a href="">免费开店</a>
+            </li>
+            <li class="site-nav-menu line">|</li>
+            <li class="site-nav-menu">
+                <a href="" class="marr7">千牛卖家中心</a>
+                <span class="iconfont">&#xe508;</span>
+            </li>
+            <li class="site-nav-menu">
+                <a href="" class="marr7">联系客服</a>
+                 <span class="iconfont">&#xe508;</span>
+            </li>
+            <li class="site-nav-menu">
+                <span class="iconfont color-FF4400 marr7">&#xe675;</span>
+                <a href="" class="marr5">网站导航</a>
+                <span class="iconfont">&#xe508;</span>
+            </li>
+        </ui>
+    </div>
+    <!-- 头部广告 -->
+    <div id="headad" >
+        <div class="layer clearfix floattop">
+            <div class="headad-left "><a href="" class="go fl"><img src="../images/go01.png" alt=""></a></div>
+            <div class="headad-right ">
+                <ul class="dr fr" >
+                            <li class="itemr">
+                                <a href="" class="fr dr"><img src="../images/汽车001.jpg" alt=""></a>
+                                <h3><a href="" class="">汽车</a></h3>
+                                <p><a href="" class="">最低降2000</a></p>
+                            </li>
+                            <li class="itemr">
+                                <a href="" class="fr dr"><img src="../images/品牌盛宴002.jpg" alt=""></a>
+                                <h3><a href="" class="">品牌盛宴</a></h3>
+                                <p><a href="" class="">最低降2000</a></p>
+                            </li>
+                            <li class="itemr">
+                                <a href="" class="fr dr"><img src="../images/服装003.jpg" alt=""></a>
+                                <h3><a href="" class="">服装</a></h3>
+                                <p><a href="" class="">最低降2000</a></p>
+                            </li>
+                            <li class="itemr">
+                                <a href="" class="fr dr"><img src="../images/化妆品004.jpg" alt=""></a>
+                                <h3><a href="" class="">化妆品</a></h3>
+                                <p><a href="" class="">最低降2000</a></p>
+                            </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 淘宝查询 -->
+    <div id="headSearch">
+        <div class="clearfix layer">
+            <h1 class="drL fl"><a href="#"><img src="../images/淘宝.jpg" alt="淘宝网"></a></h1>
+            <!-- <h1 class="drL fl"><a href="#" >淘宝网</a></h1> -->
+            <div class="drR fr">
+                <span class="iconfont close">&#xe63d;</span>
+                <span class="h">手机淘宝</span>
+                <img src="../images/二维码.jpg" alt="">
+            </div>
+            <div class="dr seach">
+                <ul class="seachTab">
+                    <li class="fl active">宝贝</li>
+                    <li class="fl">淘宝</li>
+                    <li class="fl">店铺</li>
+                </ul>
+                <div class="searchContent">
+                    <form>
+                        <div class="searchBox fl">
+                            <input type="text">
+                            <div class="placeholder">
+                                <i class="iconfont">&#xe600;</i>
+                                <span>2020年最新款</span>
+                            </div>
+                            <span class="iconfont imgsearch">&#xe647;</span>
+                        </div>
+                        <div class="searchbtn fl">
+                            <button type="submit">搜索</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="secrchM">
+                    <a href="#" class="color-FF4400">新款连衣裙</a>
+                    <a href="#">四件套</a>
+                    <a href="#" class="color-FF4400">潮流T恤</a>
+                    <a href="#">时尚女鞋</a>
+                    <a href="#">短裤</a>
+                    <a href="#" class="color-FF4400">新款连衣裙</a>
+                    <a href="#">四件套</a>
+                    <a href="#">潮流T恤</a>
+                    <a href="#">时尚女鞋</a>
+                    <a href="#">短裤</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 第一屏菜单 -->
+    <div id="layer-menu" class="layer clearfix">
+        <h2 class="fl">主题市场</h2>
+        <ul>
+            <li class="size"><a href="#">天猫</a></li>
+            <li class="size"><a href="#">聚划算</a></li>
+            <li class="size"><a href="#">天猫超市</a></li>
+            <li class="line">|</li>
+            <li><a href="#">司法拍卖</a></li>
+            <li><a href="#">淘宝心选</a></li>
+        </ul> 
+    </div>
+    <!-- 第一屏内容 -->
+    <div id = "firstContent" class=" layer clearfix">
+        <div class="firstLeft fl">
+            <div class="content1 fl">
+                <ul>
+                    <li class="nav1">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav2">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav3">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav4">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav5">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav6">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav7">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav8">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav9">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav10">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav11">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav12">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav13">
+                        <a href="#">女装</a>
+                        <span> / </span>
+                        <a href="#">内衣</a>
+                        <span> / </span>
+                        <a href="#">家居</a>
+                        <span class="iconfont fr isize_1" >&#xe50a;</span>
+                    </li>
+                    <li class="nav14">
+                        <a href="#">手表</a>/
+                        <a href="#">眼镜</a>/
+                        <a href="#">珠宝饰品</a>
+                        <i class="iconfont fr isize_1" aria-hidden="true">&#xe50a;</i>
+                    </li>
+                    <li class="nav15">
+                        <a href="#">手表</a>/
+                        <a href="#">眼镜</a>/
+                        <a href="#">珠宝饰品</a>
+                        <i class="iconfont fr isize_1" aria-hidden="true">&#xe50a;</i>
+                    </li>
+                </ul>
+            </div>
+            <div class="content2 fl">
+                <a href="#"><img src="../images/firstscreen002.jpg" alt="" ></a>
+            </div>
+            <div class="content3 fl">
+                <a href="#"><img src="../images/firstscreen003.jpg" alt="" ></a>
+            </div>
+            <div class="content4 fl">
+                <a href="#"><img src="../images/firstscreen004.jpg" alt="" ></a>
+            </div>
+            <div class="content5 fl">
+                <a href="#"><img src="../images/firstscreen005.jpg" alt="" ></a>
+            </div>
+        </div>
+        <div class="firstRight fr">
+            <div class="tbh1">
+                <div class="conve">
+                    <div class="avatar-wrapper">
+                        <a href="#"><img src="../images/淘宝客服001.jpg" alt=""></a>
+                    </div>
+                    <span class="info">Hi! 你好</span>
+                    <p class="tjb">
+                        <a href="#"><span class="imgsizeM"></span>领淘金币抵钱</a>
+                        <a href="#"><span class="imgsizeC"></span>会员俱乐部</a>
+                    </p>
+                </div>
+                <div class="bt">
+                    <a href="#" class="bt1 fl">登录</a>
+                    <a href="#" class="bt2 fl">注册</a>
+                    <a href="#" class="bt3 fl">开店</a>
+                </div>
+            </div>
+            <div class="tbh2">
+                <a href="#"><img src="../images/tbh2.jpg" alt="淘小铺"></a>
+            </div>
+            <div class="tbh3">
+                <ul class="notive-hd">
+                    <li class="menubt1 "><a href="#">公告</a></li>
+                    <li class="menubt2 "><a href="#">规则</a></li>
+                    <li class="menubt3 "><a href="#">论坛</a></li>
+                    <li class="menubt4 "><a href="#">安全</a></li>
+                    <li class="menubt5 "><a href="#">公益</a></li>
+                </ul>
+                <div class="notive-db">
+                    <ul>
+                        <li><a href="#">关于开展打击网络“有偿删帖”和“软色情”专项</a></li>
+                        <li><a href="#">关于开展打击网络“有偿删帖”和“软色情”专项111</a></li>
+                        <li><a href="#">关于开展打击网络“有偿删帖”和“软色情”专项111</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tbh4 clearfix">
+                <ul class="conveList">
+                    <li id="onbox_Phone" onmouseover="mouseoveMessage()" onmouseleave="mouseleaveMessage()"><a href="#">
+                            <span class="iconImg iconImg1"></span>
+                            <p data-spm-anchor-id="a21bo.2017.201866.i0.5af911d9TmMH90">充话费</p>
+                        </a></li>
+                    <li id="onbox_Travel"><a href="#">
+                            <span class="iconImg iconImg2"></span>
+                            <p>旅行</p>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconImg iconImg3"></span>
+                            <p data-spm-anchor-id="a21bo.2017.201866.i1.5af911d9TmMH90">车险</p>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconImg iconImg4"></span>
+                            <p>游戏</p>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconImg iconImg5"></span>
+                            <p>彩票</p>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconImg iconImg6"></span>
+                            <p>电影</p>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconImg iconImg7"></span>
+                            <p>股票</p>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="iconImg iconImg8"></span>
+                            <p>理财</p>
+                        </a></li>
+                </ul>
+                <div id= "conv_Box" class="convBox" style="display: none;">
+                    <div id = "box_Phone" class="boxPhone" style="display: none;">
+                        <div class="boxmenu">
+                            <a href="#" onmouseover="mouseoverDispayBox()" onmouseleave="mouseleaveDispayBox()">充话费</a>
+                            <a href="#" >充流量</a>
+                            <a href="#">充固话</a>
+                            <a href="#">充宽带</a>
+                        </div>
+                        <div class="boxcont">
+                            <div id = "boxcont1" class="boxcont1" style="display: none;">
+                                <div class="phoneNumber clearfix">
+                                    <input type="tel" class="numberI fl">
+                                    <span class="inconImag fl"></span>
+                                </div>
+                                <div class="faceValue clearfix">
+                                    <input type="text" class="faceValueT fl">
+                                    <span class="inconImag fl"></span>
+                                </div>
+                                <div class="price clearfix">
+                                    <h4 class="fl">售价</h4>
+                                    <s  class="fl">¥</s>
+                                    <p  class="fl">49-49.8</p>
+                                </div>
+                                <div class="but ">
+                                    <button>立即充值</button>
+                                </div>
+                            </div>
+                            <div id = "boxcont2" class="boxcont2" style="display: none;">
+                                <div class="phoneNumber clearfix">
+                                    <input type="tel" class="numberI fl">
+                                    <span class="inconImag fl"></span>
+                                </div>
+                                <div class="faceValue clearfix">
+                                    <input type="text" class="faceValueT fl">
+                                    <span class="inconImag fl"></span>
+                                </div>
+                                <div class="price clearfix">
+                                    <h4 class="fl">售价</h4>
+                                    <s  class="fl">¥</s>
+                                    <p  class="fl">49-49.8</p>
+                                </div>
+                                <div class="but ">
+                                    <button>立即充值</button>
+                                </div>
+                            </div>
+                            <div class="boxcont3" style="display: none;"></div>
+                            <div class="boxcont4" style="display: none;"></div>
+                        </div>
+                    </div>
+                    <div id = "box_Travel" class="boxTravel" style="display: none">
+                        <div class="boxmenu">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="boxcont">
+                        </div>
+                    </div>
+                    <div id = "box_CarI"  class="boxCarI">
+                        <div class="boxmenu" style="display: none">
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                        </div>
+                        <div class="boxcont">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tbh5">
+                <div class="conve clearfix">
+                    <h3>
+                        阿里APP
+                        <a class="more" href="#">更多 <i class="iconfont"></i></a>
+                    </h3>
+                </div>
+                <ul class="apps-nav clearfix">
+                    <li class="fl"><a href="#"><img src="../images/淘宝Logo.webp" alt="" class="drsize"></a>
+                        <div class="appqr"><img src="" alt="" class="drsize">
+                            <p></p>
+                        </div>
+                    </li>
+                    <li class="fl"><a href="#"><img src="../images/天猫Logo.webp" alt="" class="drsize"></a>
+                        <div class="appqr"><img src="" alt="" class="drsize">
+                            <p></p>
+                        </div>
+                    </li>
+                    <li class="fl"><a href="#"><img src="../images/支付宝Logo.webp" alt="" class="drsize"></a>
+                        <div class="appqr"><img src="" alt="" class="drsize">
+                            <p></p>
+                        </div>
+                    </li>
+                    <li class="fl"><a href="#"><img src="../images/飞丁Logo.webp" alt="" class="drsize"></a>
+                        <div class="appqr"><img src="" alt="" class="drsize">
+                            <p></p>
+                        </div>
+                    </li>
+                    <li class="fl"><a href="#"><img src="../images/店铺Logo.webp" alt="" class="drsize"></a>
+                        <div class="appqr"><img src="" alt="" class="drsize">
+                            <p></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <!-- 品质好货 -->
+    <div id="layer-good" class="layer clearfix">
+        <div class="good">
+            dflajdlfasdfsdfadsfsadf阿斯顿发斯蒂芬
+        </div>
+    </div>
+    <!--     /****导航*/ -->
+    <div id="fixedtool" class="layer clearfix">
+        <span class="iconfont">&#xe509;</span>
+        <a href="#" class="fixedtoolSize fixedtool-1 fl">品质 好货</a>
+        <a href="#" class="fixedtoolSize fixedtool-2 fl" style="color: #f05;">好店 直播</a>
+        <a href="#" class="fixedtoolSize fixedtool-3 fl" style="color: #A8C001;">实惠 热卖</a>
+        <a href="#" class="fixedtoolSize fixedtool-4 fl" style="color: #F40;">猜你 喜欢</a>
+        <a href="#" class="fixedtoolSize fixedtool-5 fl" style="font-size: 12px;">反馈</a>
+        <a href="#" class="fixedtoolSize fixedtool-6 fl">暴恐 举报</a>
+    </div>
+</body>
+</html>

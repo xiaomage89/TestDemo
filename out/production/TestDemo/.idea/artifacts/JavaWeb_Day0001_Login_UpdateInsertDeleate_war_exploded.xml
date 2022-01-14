@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaWeb_Day0001_Login_UpdateInsertDeleate:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaWeb_Day0001_Login_UpdateInsertDeleate_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaWeb_Day0001_Login_UpdateInsertDeleate/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaWeb_Day0001_Login_UpdateInsertDeleate" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

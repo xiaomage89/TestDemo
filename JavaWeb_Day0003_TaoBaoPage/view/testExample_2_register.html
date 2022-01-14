@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  charset="utf-8">
+	<title>注册信息</title>
+	<style type="text/css">
+		body{
+			font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+			color: #3c3c3c;
+			background-color: #f4f4f4;
+		}
+		form{
+			font-size: 0px;
+		}
+		#register{
+				width: 1000px;
+				margin: 0 auto;
+		}
+		input{
+			height: 12px;
+			line-height: 12px;
+		 	padding: 4px 3px 4px 3px;
+		 	font-size: 12px;
+		    /*border: solid 1px #ccc;*/
+		}
+		label {
+			display: inline-block;
+			width: 100px;
+			height: 18px;
+			font-size: 12px;
+		}
+
+		.inputMsg{
+
+		}
+		label.errorMsg{
+			display: none;
+			width: 500px;
+			height: 18px;
+			margin-left: 5px;
+			color: red;
+		}
+		.divInput{
+			margin-top: 5px;
+		}
+		label.area{
+			float: left;
+			line-height: 34.8px;
+		}
+		.birth{
+			width: 154.8px;
+		}
+
+		.button{
+			height: 30px;
+			width: 40px;
+		}
+		.mr15{
+			margin-right: 15px;
+		}
+          /* 这是控制年月日之间的斜线或短横线的 */
+           input[type="date"]::-webkit-datetime-edit-text {
+             color: blue;
+             padding: 0 .3em;
+           }
+           
+	</style>
+	<script type="text/javascript">
+			
+		//获得焦点
+		function checkkeyup(name){
+			var value = document.getElementsByName(name)[0].value;
+			var messages="";
+			//用户名
+			if(name=="loginname"){
+				// if(value==null || value.length ==0){
+				// 	messages = "用户名不能为空！";
+				// }else 
+				if(value.length<3 || value.length>20){
+					messages ="用户名长度必须在3 ~ 20之间！";
+				}
+				var exp=/^[a-zA-Z]+[a-zA-Z0-9]+$/;
+				if(value.length > 0 && !exp.test(value)){
+					messages = "用户名必须包含数字和英文,并且必须为英文字母开头!";
+				}
+			}
+
+			//密码
+			if(name=="password"){
+
+				if(value.length<8 && value.length>0){
+					messages ="密码长度必须大于8位！";
+				}
+				var exp=/[^a-zA-Z0-9]/;
+				if(value.length >= 8 && !exp.test(value)){
+					messages = "密码必须有数字和英文以外的字符!";
+				}
+
+				var passwordre = document.getElementsByName("passwordre")[0].value == null ? "" : document.getElementsByName("passwordre")[0].value;
+				if(passwordre.length > 0 && messages.length==0 && passwordre != value){
+					messages = "两次输入密码不一致！";
+				}
+			}
+
+			//确认密码
+			if(name=="passwordre"){
+				if(value.length<8 && value.length>0){
+					messages ="密码长度必须大于8位！";
+				}
+				var exp=/[^a-zA-Z0-9]/;
+				if(value.length >= 8 && !exp.test(value)){
+					messages = "密码必须有数字和英文以外的字符!";
+				}
+
+				var password = document.getElementsByName("password")[0].value == null ? "" : document.getElementsByName("password")[0].value;
+				if(password.length > 0 && messages.length==0 && password != value){
+					messages = "两次输入密码不一致！";
+				}
+			}
+
+			console.log(value);
+			//生日
+			if(name =="birth"){
+
+				console.log(value);
+			}
+
+			//身份证
+			if(name=="idNo"){
+
+				var exp=/(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+				if(!exp.test(value)){
+					messages = "身份证号码输入不正确！";
+				}
+			}
+			//邮编
+			if(name=="postcode"){
+
+				var exp=/^\d{6}$/;
+				if( !exp.test(value)){
+					messages = "邮编输入不正确！";
+				}
+			}
+			//email
+			if(name=="email"){
+
+				var exp=/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+				if(!exp.test(value)){
+					messages = "email输入不正确！";
+				}
+			}
+			document.getElementById(name).innerHTML=messages;
+			document.getElementById(name).style.display = "inline-block";
+
+		}
+		//失去焦点
+		function checkBluf(name){
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="register">
+		<h2>注册信息</h2>
+		<form action="register" id="register">
+			<div class="divInput">
+				<label>账号：</label>
+				<input class="inputMsg" type="text" name="loginname" onkeyup="checkkeyup(this.name)" >
+				<label class="errorMsg" id="loginname">${errors.loginname}</label>
+			</div>
+			<div class="divInput">
+				<label>密码：</label>
+				<input class="inputMsg" type="password" name="password" onkeyup="checkkeyup(this.name)" >
+				<label class="errorMsg" id="password" >${errors.password}</label>
+			</div>
+			<div class="divInput">
+				<label>确认密码：</label>
+				<input class="inputMsg" type="password" name="passwordre" onkeyup="checkkeyup(this.name)" >
+				<label class="errorMsg" id="passwordre">${errors.passwordre}</label>
+			</div>
+			<div class="divInput">
+				<label>姓名：</label>
+				<input class="inputMsg" type="text" name="user">
+				<label class="errorMsg">${errors.user}</label>
+			</div>
+			<div class="divInput">
+				<label>身份证：</label>
+				<input class="inputMsg" type="text" name="idNo" onkeyup="checkkeyup(this.name)">
+				<label class="errorMsg" id="idNo">${errors.idNo}</label>
+			</div>
+			<div class="divInput">
+				<label>出生年月日：</label>
+				<input class="inputMsg birth" type="date" name="birth"  onkeyup="checkkeyup(this.name)" >
+				<label class="errorMsg" id="birth">${errors.birth}</label>
+				<!--<input type="text"  class="form-control" readonly value="<fmt:formatDate value="${ore.from}" pattern="yyyy-MM-dd HH:mm:ss" />" > -->
+			</div>
+			<div class="divInput">
+				<label class="area">住址：</label>
+				<textarea class="inputMsg" id="" name="area" cols="30" rows="2"></textarea>
+				<label class="errorMsg">${errors.area}</label>
+			</div>
+			<div class="divInput">
+				<label >邮编：</label>
+				<input class="inputMsg" type="text" name="postcode"  onkeyup="checkkeyup(this.name)">
+				<label class="errorMsg" id="postcode">${errors.postcode}</label>
+			</div>
+			<div class="divInput">
+				<label>e-mail：</label>
+				<input class="inputMsg" type="text" name="email"  onkeyup="checkkeyup(this.name)">
+				<label class="errorMsg" id="email">${errors.email}</label>
+			</div>
+			<input class="button" type="submit" name="submit" value="注册">
+			<span class="mr15" ></span>
+			<input class="button" type="reset" name="reset" value="重置">
+		</form>
+	</div>
+</body>
+</html>

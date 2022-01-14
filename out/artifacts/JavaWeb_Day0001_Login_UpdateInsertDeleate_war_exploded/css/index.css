@@ -1,0 +1,61 @@
+@CHARSET "UTF-8";
+
+/**
+	@font-face  自定义字体
+	@import 模块化开发
+*/
+
+@import url(admin.css);
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style: none;
+}
+img{
+	border:none;
+	vertical-align: middle;
+}
+a{
+	text-decoration: none;
+	color: #3c3c3c;
+}
+button{
+	outline: none;
+}
+input{
+  padding: 4px 20px 4px 3px;
+  border: solid 1px #ccc;
+}
+body{
+	font: 12px/1.5 tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+	color: #3c3c3c;
+	background-color: #f4f4f4;
+}
+
+body a:hover {
+    color: #F40;
+    text-decoration: none;
+}
+
+.clearfix .after{
+	content:'';
+	display: block;
+	clear: both;
+}
+
+.layer{
+	width: 1190px;
+	margin: 0 auto;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+

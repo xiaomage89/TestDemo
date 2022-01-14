@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1056241",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6204474",
+      "name": "圆点",
+      "font_class": "yuandian",
+      "unicode": "e515",
+      "unicode_decimal": 58645
+    },
+    {
+      "icon_id": "6822872",
+      "name": "差",
+      "font_class": "cha",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "7290573",
+      "name": "星星",
+      "font_class": "xingxing",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    },
+    {
+      "icon_id": "8022814",
+      "name": "大于号",
+      "font_class": "right",
+      "unicode": "e50a",
+      "unicode_decimal": 58634
+    },
+    {
+      "icon_id": "10369070",
+      "name": "大于",
+      "font_class": "down",
+      "unicode": "e508",
+      "unicode_decimal": 58632
+    },
+    {
+      "icon_id": "10951796",
+      "name": "淘宝",
+      "font_class": "taobao",
+      "unicode": "e509",
+      "unicode_decimal": 58633
+    },
+    {
+      "icon_id": "12204121",
+      "name": "照相机",
+      "font_class": "zhaoxiangji",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "15022539",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e514",
+      "unicode_decimal": 58644
+    },
+    {
+      "icon_id": "15463125",
+      "name": "淘宝,TAO,alibaba,1688",
+      "font_class": "taobao1",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "16026029",
+      "name": "小于",
+      "font_class": "xiaoyu",
+      "unicode": "e6fb",
+      "unicode_decimal": 59131
+    },
+    {
+      "icon_id": "18939001",
+      "name": "快退",
+      "font_class": "kuaitui",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "18939002",
+      "name": "快进",
+      "font_class": "kuaijin",
+      "unicode": "e68f",
+      "unicode_decimal": 59023
+    },
+    {
+      "icon_id": "18939003",
+      "name": "播放中",
+      "font_class": "bofangzhong",
+      "unicode": "e690",
+      "unicode_decimal": 59024
+    }
+  ]
+}
