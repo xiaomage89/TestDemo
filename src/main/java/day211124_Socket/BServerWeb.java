@@ -14,11 +14,17 @@ public class BServerWeb {
         // 接受信息
         ServerSocket serverSocket = new ServerSocket(8866);
         while (true) {
+            Socket socket = serverSocket.accept();
+            System.out.println("===========================");
             new Thread(new Runnable() {
                 @Override
                 public void run() {
+                    BufferedReader bufferedReader = null;
+                    FileInputStream fileInputStream = null;
+                    OutputStream outputStream = null;
                     try {
-                        Socket socket = serverSocket.accept();
+
+
                         // 打印web请求信息
                         // InputStream inputStream = socket.getInputStream();
                         // byte[] bytes = new byte[1024];
@@ -27,7 +33,7 @@ public class BServerWeb {
                         //     System.out.println(new String(bytes,0,len));
                         // }
 
-                        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                        bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                         String readLine = bufferedReader.readLine();
                         String[] split = readLine.split(" ");
                         String path = split[1].substring(1);
@@ -36,10 +42,10 @@ public class BServerWeb {
                         // 读取html文件
                         // http://localhost:8866/web/index.html
                         // FileInputStream fileInputStream = new FileInputStream("web\\index.html");
-                        FileInputStream fileInputStream = new FileInputStream(path);
+                        fileInputStream = new FileInputStream(path);
 
                         // 向浏览器会写数据
-                        OutputStream outputStream = socket.getOutputStream();
+                        outputStream = socket.getOutputStream();
                         outputStream.write("HTTP/1.1 200 OK\r\n".getBytes());
                         outputStream.write("Content‐Type:text/html\r\n".getBytes());
                         outputStream.write("\r\n".getBytes());
@@ -48,18 +54,20 @@ public class BServerWeb {
                         while ((len = fileInputStream.read(bytes)) != -1) {
                             outputStream.write(bytes, 0, len);
                         }
-                        bufferedReader.close();
-                        fileInputStream.close();
-                        outputStream.close();
-                        socket.close();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }finally {
+                        try {
+                            bufferedReader.close();
+                            fileInputStream.close();
+                            outputStream.close();
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
 
                     }
-
                 }
-
             }).start();
         }
 
