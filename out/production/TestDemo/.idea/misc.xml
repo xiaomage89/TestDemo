@@ -8,6 +8,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/JavaWeb_Day25_MavenDemo_Test/pom.xml" />
+        <option value="$PROJECT_DIR$/Day31_Mybatis_Start/pom.xml" />
+        <option value="$PROJECT_DIR$/Day31_Mybatis_Design/pom.xml" />
       </list>
     </option>
   </component>

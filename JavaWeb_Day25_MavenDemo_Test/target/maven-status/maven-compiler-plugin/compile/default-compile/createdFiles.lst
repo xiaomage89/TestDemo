@@ -5,13 +5,16 @@ it\com\vo\ResultInfo.class
 it\com\vo\Route.class
 it\com\util\UuidUtil.class
 it\com\service\FavoriteService.class
+it\com\web\filter\CharchaterFilter.class
 it\com\dao\impl\SellerDaoImpl.class
 it\com\dao\SellerDao.class
+it\com\util\Md5Util.class
 it\com\util\JDBCUtils.class
 it\com\util\MailUtils.class
 it\com\web\servlet\CategoryServlet.class
 it\com\web\servlet\LoginServlet.class
 it\com\vo\PageBean.class
+it\com\util\JedisUtil.class
 it\com\dao\impl\CategoryDaoImpl.class
 it\com\web\servlet\BaseServlet.class
 it\com\dao\impl\FavoriteDaoImpl.class

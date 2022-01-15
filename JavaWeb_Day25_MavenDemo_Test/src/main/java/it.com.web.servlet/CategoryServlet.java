@@ -44,6 +44,9 @@ public class CategoryServlet extends BaseServlet {
         String pageSize_s = req.getParameter("pageSize");
         //接受rname 线路名称
         String rname = req.getParameter("rname");
+        if("null".equals(rname)  ){
+            rname = "";
+        }
         rname = new String(rname.getBytes("iso-8859-1"),"utf-8");
 
         int cid = 1;
