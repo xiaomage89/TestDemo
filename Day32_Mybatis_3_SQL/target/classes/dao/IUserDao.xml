@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.dao.IUserDao">
+    <select id="findAll" resultType="it.vo.User">
+        select * from user
+    </select>
+
+    <select id="findByString" resultType="it.vo.User" parameterType="string">
+        select * from user
+        <where>
+            <if test="ss != null">
+                and username = #{ss}
+            </if>
+        </where>
+    </select>
+
+    <select id="findByName" resultType="it.vo.User" parameterType="it.vo.User">
+        select * from user
+        <where>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+        </where>
+    </select>
+
+
+    <select id="findByLikeName" resultType="it.vo.User" parameterType="it.vo.User">
+        select * from user
+        <where>
+            <if test="username != null">
+                and username like #{username}
+            </if>
+        </where>
+    </select>
+
+
+
+    <resultMap id="userMap" type="it.vo.User">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="birthday" column="birthday"></result>
+        <result property="sex" column="sex"></result>
+        <collection property="role" ofType="it.vo.Role">
+            <result property="roleId" column="rid"></result>
+            <result property="roleName" column="role_name"></result>
+        </collection>
+    </resultMap>
+    <select id="findManytoMany" resultMap="userMap">
+        select u.*,r.id as rid,r.role_name,r.role_desc from user u
+         left outer join user_role ur  on u.id = ur.uid
+         left outer join role r on r.id = ur.rid
+    </select>
+</mapper>

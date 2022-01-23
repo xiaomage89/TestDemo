@@ -6,14 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Day31_Mybatis_Design" />
-        <module name="Day31_Mybatis_Start" />
+        <module name="Day32_Mybatis_4_cache" />
         <module name="JavaWeb_Day25_MavenDemo_Test" />
+        <module name="Day31_Mybatis_Start" />
+        <module name="Day32_Mybatis_4_lazy" />
+        <module name="Day31_Mybatis_Design" />
+        <module name="Day32_Mybatis_3_SQL" />
+        <module name="Day32_Mybatis_4_ManyToMany" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Day31_Mybatis_Design" target="6" />
       <module name="Day31_Mybatis_Start" target="1.5" />
+      <module name="Day32_Mybatis_3_SQL" target="1.5" />
+      <module name="Day32_Mybatis_4_cache" target="1.5" />
+      <module name="Day32_Mybatis_4_lazy" target="1.5" />
+      <module name="Day32_Mybatis_4_ManyToMany" target="1.5" />
       <module name="JavaWeb_Day25_Maven_Test" target="1.5" />
       <module name="JavaWeb_Day25_MavenDemo_Test" target="1.8" />
       <module name="travel" target="1.8" />

@@ -4,6 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Day31_Mybatis_Design/Day31_Mybatis_Design.iml" filepath="$PROJECT_DIR$/Day31_Mybatis_Design/Day31_Mybatis_Design.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day31_Mybatis_Start/Day31_Mybatis_Start.iml" filepath="$PROJECT_DIR$/Day31_Mybatis_Start/Day31_Mybatis_Start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day32_Mybatis_3_SQL/Day32_Mybatis_3_SQL.iml" filepath="$PROJECT_DIR$/Day32_Mybatis_3_SQL/Day32_Mybatis_3_SQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day32_Mybatis_4_ManyToMany/Day32_Mybatis_4_ManyToMany.iml" filepath="$PROJECT_DIR$/Day32_Mybatis_4_ManyToMany/Day32_Mybatis_4_ManyToMany.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day32_Mybatis_4_lazy/Day32_Mybatis_4_cache.iml" filepath="$PROJECT_DIR$/Day32_Mybatis_4_lazy/Day32_Mybatis_4_cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day32_Mybatis_4_lazy/Day32_Mybatis_4_lazy.iml" filepath="$PROJECT_DIR$/Day32_Mybatis_4_lazy/Day32_Mybatis_4_lazy.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day0001_Login_UpdateInsertDeleate/JavaWeb_Day0001_Login_UpdateInsertDeleate.iml" filepath="$PROJECT_DIR$/JavaWeb_Day0001_Login_UpdateInsertDeleate/JavaWeb_Day0001_Login_UpdateInsertDeleate.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day0002_Spring_Test/JavaWeb_Day0002_Spring_Test.iml" filepath="$PROJECT_DIR$/JavaWeb_Day0002_Spring_Test/JavaWeb_Day0002_Spring_Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb_Day0003_TaoBaoPage/JavaWeb_Day0003_TaoBaoPage.iml" filepath="$PROJECT_DIR$/JavaWeb_Day0003_TaoBaoPage/JavaWeb_Day0003_TaoBaoPage.iml" />

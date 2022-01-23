@@ -10,6 +10,10 @@
         <option value="$PROJECT_DIR$/JavaWeb_Day25_MavenDemo_Test/pom.xml" />
         <option value="$PROJECT_DIR$/Day31_Mybatis_Start/pom.xml" />
         <option value="$PROJECT_DIR$/Day31_Mybatis_Design/pom.xml" />
+        <option value="$PROJECT_DIR$/Day32_Mybatis_3_SQL/pom.xml" />
+        <option value="$PROJECT_DIR$/Day32_Mybatis_4_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/Day32_Mybatis_4_ManyToMany/pom.xml" />
+        <option value="$PROJECT_DIR$/Day32_Mybatis_4_lazy/pom.xml" />
       </list>
     </option>
   </component>
