@@ -6,18 +6,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Day32_Mybatis_4_cache" />
         <module name="Day34_Spring_3_AOP_proxy" />
-        <module name="JavaWeb_Day25_MavenDemo_Test" />
-        <module name="Day33_Spring_2_ioc_anno" />
         <module name="Day33_Spring_2_ioc_xml" />
-        <module name="Day31_Mybatis_Start" />
-        <module name="Day33_Sprng_2_ioc_anno_withoutxml" />
-        <module name="Day32_Mybatis_4_lazy" />
-        <module name="Day31_Mybatis_Design" />
-        <module name="Day32_Mybatis_3_SQL" />
-        <module name="Day34_Spring_3_AOP_account" />
+        <module name="Day35_Spring_3_5_AOP_tx" />
         <module name="Day32_Mybatis_4_ManyToMany" />
+        <module name="Day32_Mybatis_4_cache" />
+        <module name="Day35_Spring_3_5_AOP_tx_xml_defin" />
+        <module name="Day35_Spring_3_5_AOP_tx_anno_defin" />
+        <module name="Day31_Mybatis_Design" />
+        <module name="JavaWeb_Day25_MavenDemo_Test" />
+        <module name="Day35_Spring_3_5_AOP_tx_anno" />
+        <module name="Day35_Spring_3_AOP_anno" />
+        <module name="Day35_Spring_3_AOP_xml" />
+        <module name="Day35_Spring_3_5_AOP_tx_xml" />
+        <module name="Day32_Mybatis_4_lazy" />
+        <module name="Day31_Mybatis_Start" />
+        <module name="Day34_Spring_3_AOP_account" />
+        <module name="Day33_Spring_2_ioc_anno" />
+        <module name="Day35_Spring_3_7_AOP_tx_without" />
+        <module name="Day32_Mybatis_3_SQL" />
+        <module name="Day33_Sprng_2_ioc_anno_withoutxml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,9 +41,18 @@
       <module name="Day33_Sprng_2_ioc_anno_withoutxml" target="6" />
       <module name="Day34_Spring_3_AOP_account" target="6" />
       <module name="Day34_Spring_3_AOP_proxy" target="6" />
+      <module name="Day35_Spring_3_5_AOP_tx" target="6" />
+      <module name="Day35_Spring_3_5_AOP_tx_anno" target="6" />
+      <module name="Day35_Spring_3_5_AOP_tx_anno_defin" target="6" />
+      <module name="Day35_Spring_3_5_AOP_tx_xml" target="6" />
+      <module name="Day35_Spring_3_5_AOP_tx_xml_defin" target="6" />
+      <module name="Day35_Spring_3_7_AOP_tx_without" target="6" />
+      <module name="Day35_Spring_3_AOP_anno" target="6" />
+      <module name="Day35_Spring_3_AOP_xml" target="6" />
       <module name="JavaWeb_Day25_Maven_Test" target="1.5" />
       <module name="JavaWeb_Day25_MavenDemo_Test" target="1.8" />
       <module name="travel" target="1.8" />
+      <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

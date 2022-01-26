@@ -19,6 +19,14 @@
         <option value="$PROJECT_DIR$/Day33_Sprng_2_ioc_anno_withoutxml/pom.xml" />
         <option value="$PROJECT_DIR$/Day34_Spring_3_AOP_account/pom.xml" />
         <option value="$PROJECT_DIR$/Day34_Spring_3_AOP_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_AOP_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_AOP_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_5_AOP_tx/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_5_AOP_tx_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_5_AOP_tx_xml_defin/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_5_AOP_tx_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_5_AOP_tx_anno_defin/pom.xml" />
+        <option value="$PROJECT_DIR$/Day35_Spring_3_7_AOP_tx_without/pom.xml" />
       </list>
     </option>
   </component>
